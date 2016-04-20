@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom APIs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Do Math!</h1>
+        <form class="math-form form-inline">
+            <div class="form-group">
+                <input type="text" class="operand1 form-control">
+            </div>
+            <div class="form-group">
+                <select class="operator form-control">
+                    <option value="add">+</option>
+                    <option value="subtract">-</option>
+                    <option value="multiply">x</option>
+                    <option value="divide">/</option>
+                    <option value="exponent">^</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" class="operand2 form-control">
+            </div>
+            <button class="btn btn-default">=</button>
+            <span class="math-result"></span>
+        </form>
+        <hr>
+        <h1>Gravatar Finder</h1>
+        <form class="gravatar-form form-inline">
+            <div class="form-group">
+                <input type="email" placeholder="E-mail Address" class="gravatar-email form-control">
+            </div>
+            <button class="btn btn-default">Submit</button>
+        </form>
+        <br>
+        <img class="gravatar-result" src="">
+        <hr>
+        <h1>Sentence Analyzer</h1>
+        <form class="sentence-form form-inline">
+            <div class="form-group">
+                <input type="text" placeholder="Enter a sentence..." class="sentence-input form-control">
+            </div>
+            <button class="btn btn-default">Submit</button>
+        </form>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Word count: <span class="word-count"></span></li>
+            <li class="list-group-item">Character count: <span class="character-count"></span></li>
+            <li class="list-group-item">Average word length: <span class="average-word-length"></span></li>
+        </ul>
+        <hr>
+        <h1>Age Calculator</h1>
+        <form class="age-form form-inline">
+            <div class="form-group">
+                Birthdate: <input type="date" class="age-input form-control">
+            </div>
+            <button class="btn btn-default">Submit</button>
+        </form>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Age: <span class="age-result"></span></li>
+        </ul>
+        <hr>
+        <h1>Magic 8 Ball</h1>
+        <form class="magic-form form-inline">
+            <div class="form-group">
+                <input type="text" placeholder="Ask a question..." class="magic-input form-control">
+            </div>
+            <button class="btn btn-default">Submit</button>
+        </form>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Answer: <span class="magic-result"></span></li>
+        </ul>
+        <hr>
+        <h1>Profanity Filter</h1>
+        <form class="profanity-form form-inline">
+            <div class="form-group">
+                <input type="text" placeholder="Enter text to filter..." class="profanity-input form-control">
+            </div>
+            <button class="btn btn-default">Submit</button>
+        </form>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Filtered Text: <span class="profanity-result"></span></li>
+        </ul>
+        <hr>
+        <h1>Spell Checker</h1>
+        <form class="spelling-form form-inline">
+            <div class="form-group">
+                <input type="text" placeholder="Enter text to spellcheck..." class="spelling-input form-control">
+            </div>
+            <button class="btn btn-default">Submit</button>
+        </form>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Suggested Spelling: <span class="spelling-result"></span></li>
+        </ul>
+    </div>
+</body>
+</html>
